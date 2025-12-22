@@ -103,6 +103,8 @@ const Landpage = () => {
                   muted
                   className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
                   onLoadedData={handleVideoLoad}
+                    preload="auto"
+                  playsInline
                 />
               </div>
             </div>
@@ -124,6 +126,8 @@ const Landpage = () => {
               loop
               muted
               className="absolute left-0 top-0 size-full object-cover object-center"
+                preload="auto"
+                  playsInline
             />
           </div>
         </div>
