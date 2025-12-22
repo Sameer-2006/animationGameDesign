@@ -36,7 +36,8 @@ const About = () => {
                 autoPlay
                 muted
                 loop
-                playsInline
+                  preload="auto"
+                  playsInline
               >
                 <source src="/videos/virtualtr.mp4" type="video/mp4" />
               </video>
