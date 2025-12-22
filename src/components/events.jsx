@@ -50,7 +50,7 @@ const Evnt = () => {
           text-[clamp(5rem,18vw,20rem)] sm:text-[clamp(8rem,17vw,20rem)]
           uppercase tracking-tight
           bg-gradient-to-r from-[#ff4b1f] to-[#1fddff]
-
+           transform-gpu
           bg-clip-text text-transparent
           select-none pointer-events-none
           will-change-transform
