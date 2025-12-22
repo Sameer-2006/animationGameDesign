@@ -1,12 +1,30 @@
-import { useRef, useState } from "react";
+import { useRef, useState ,useEffect} from "react";
 
 const Landpage = () => {
   const [curindx, setcurindx] = useState(1);
   const [hsclicked, sethsclicked] = useState(false);
   const [loadedvideo, setLoadedvideo] = useState(0);
+  const heroRef = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
 
   const totalVideos = 6;
   const nxtVideoRef = useRef(null);
+
+  useEffect(() => {
+  if (!heroRef.current) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      setScrolled(!entry.isIntersecting);
+    },
+    { threshold: 0.1 }
+  );
+
+  observer.observe(heroRef.current);
+
+  return () => observer.disconnect();
+}, []);
+
 
   const handleVideoLoad = () => {
     setLoadedvideo((prev) => prev + 1);
@@ -25,8 +43,16 @@ const Landpage = () => {
 
   return (
     <>
-      {/*This for NavBAr */}
-      <div className="fixed top-0 left-0 z-50 flex w-full h-[60px]  backdrop-blur-md justify-between items-center">
+     <div
+  className={`fixed top-0 left-0 z-50  flex w-full h-[60px]   justify-between items-center   px-4   transition-all duration-300 ease-out
+    ${
+      scrolled
+        ? "bg-white/90 backdrop-blur-md shadow-md"
+        : "bg-transparent"
+    }
+  `}
+>
+
         <div className=" flex items-center justify-center">
           <img src="/logo/ism.png" alt="logo" className="h-10 px-[10px]" />
           <a href="#home" className="h-10 px-[8px]">
@@ -83,7 +109,7 @@ const Landpage = () => {
       </div>
 
       {/*This for VIdeo Background  */}
-      <div id="home" className="relative h-dvh w-full overflow-x-hidden">
+      <div id="home"   ref={heroRef} className="relative h-dvh w-full overflow-x-hidden">
         <div
           id="video-frame"
           className="relative z-10 h-dvh w-full overflow-hidden bg-blue-75"
