@@ -50,7 +50,7 @@ const Projct = () => {
           text-[clamp(5rem,18vw,20rem)] sm:text-[clamp(8rem,17vw,20rem)]
           uppercase tracking-tight
           bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]
-
+           transform-gpu
           bg-clip-text text-transparent
           select-none pointer-events-none
           will-change-transform
