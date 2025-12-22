@@ -48,6 +48,7 @@ const Achiev = () => {
           absolute  sm:top-2 lg:top-10 left-1/2
           origin-center
           font-['Anton']
+         transform-gpu
           text-[clamp(5rem,18vw,20rem)] sm:text-[clamp(8rem,17vw,20rem)]
           uppercase tracking-tight
           bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
