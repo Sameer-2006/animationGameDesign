@@ -39,18 +39,18 @@ const Evnt = () => {
     <section
       id="evnt"
       ref={sectionRef}
-      className="relative bg-white  sm:pt-32 lg:pt-35  sm:pb-24 overflow-hidden"
+      className="relative bg-white sm:pt-32 lg:pt-40 pb-20 sm:pb-24 overflow-hidden"
     >
-      {/* BACKGROUND TEXT */}
       <h1
         ref={textRef}
-        className="   
-  bg-gradient-to-r from-[#ff4b1f] to-[#1fddff]
-           absolute  sm:top-2 lg:top-10 left-1/2
+        className="
+          absolute sm:top-2 lg:top-10 left-1/2
           origin-center
           font-['Anton']
           text-[clamp(5rem,18vw,20rem)] sm:text-[clamp(8rem,17vw,20rem)]
           uppercase tracking-tight
+          bg-gradient-to-r from-[#ff4b1f] to-[#1fddff]
+
           bg-clip-text text-transparent
           select-none pointer-events-none
           will-change-transform
@@ -59,16 +59,14 @@ const Evnt = () => {
         events
       </h1>
 
-      {/* FOREGROUND */}
-      <div className="relative z-10  sm:mt-32 max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="relative z-10 mt-24 sm:mt-32 max-w-7xl mx-auto px-4 sm:px-6">
         <div
           className="
           flex flex-col items-center gap-8
           md:flex-row md:flex-wrap md:justify-center
         "
         >
-          {/* CARD 1 */}
-          <div className="w-full sm:w-[280px] md:w-[300px] rounded-xl border border-white/30 backdrop-blur-sm p-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+           <div className="w-full sm:w-[280px] md:w-[300px] rounded-xl border border-white/30 backdrop-blur-sm p-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:scale-105 hover:-translate-y-1">
             <img
               src="/evnts/monsoonfinal.jpeg"
               alt="monsoonJam"
@@ -81,17 +79,15 @@ const Evnt = () => {
             <p className="mt-2 text-sm text-slate-600 text-center sm:text-left">
               Monsoon Jam is edition of our flagship game development
               competition, following the success of last year’s Summer Jam. It
-              brings together storytellers, artists, and designers
-              to collaborate and build innovative projects within a limited
-              timeframe. Participants will work in teams, explore new ideas, and
+              brings together storytellers, artists, and designers to
+              collaborate and build innovative projects within a limited
+              timeframe. Participants will work in teams  and
               create games or animations around a unique theme announced at the
               start of the event. The JAM promises an exciting blend of
-              creativity,teamwork, and  skills.
+              creativity,teamwork, and skills.
             </p>
           </div>
-
-          {/* CARD 2 */}
-          <div className="w-full sm:w-[280px] md:w-[300px] rounded-xl border border-white/30 backdrop-blur-sm p-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+        <div className="w-full sm:w-[280px] md:w-[300px] rounded-xl border border-white/30 backdrop-blur-sm p-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 hover:scale-105 hover:-translate-y-1">
             <img
               src="/evnts/Summer_jam.jpg"
               alt="SummerJam"
@@ -228,6 +224,17 @@ const Evnt = () => {
               game design, coding, and 3D modeling.
             </p>
           </div>
+        </div>
+
+        <div className="mt-16 sm:mt-20 text-center">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/"
+            className="inline-block rounded-full border px-6 py-2 text-sm hover:bg-slate-100 transition"
+          >
+            View All Projects →
+          </a>
         </div>
       </div>
     </section>
