@@ -56,7 +56,7 @@ const Landpage = () => {
         <div className=" flex items-center justify-center">
           <img src="/logo/ism.png" alt="logo" className="h-10 px-[10px]" />
           <a href="#home" className="h-10 px-[8px]">
-            <img src="/logo/logo.jpg" alt="logo" className="h-10 px-[10px]" />
+            <img src="/logo/black_logo.png" alt="logo" className="h-10 px-[10px]" />
           </a>
         </div>
 
