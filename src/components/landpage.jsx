@@ -28,9 +28,9 @@ const Landpage = () => {
       {/*This for NavBAr */}
       <div className="fixed top-0 left-0 z-50 flex w-full h-[60px]  backdrop-blur-md justify-between items-center">
         <div className=" flex items-center justify-center">
-          <img src="/public/ism.png" alt="logo" className="h-10 px-[10px]" />
+          <img src="/logo/ism.png" alt="logo" className="h-10 px-[10px]" />
           <a href="#home" className="h-10 px-[8px]">
-            <img src="/public/logo.jpg" alt="logo" className="h-10 px-[10px]" />
+            <img src="/logo/logo.jpg" alt="logo" className="h-10 px-[10px]" />
           </a>
         </div>
 

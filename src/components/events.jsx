@@ -44,13 +44,13 @@ const Evnt = () => {
       {/* BACKGROUND TEXT */}
       <h1
         ref={textRef}
-        className="
-         absolute  sm:top-2 lg:top-10 left-1/2
+        className="   
+  bg-gradient-to-r from-[#ff4b1f] to-[#1fddff]
+           absolute  sm:top-2 lg:top-10 left-1/2
           origin-center
           font-['Anton']
-          text-[clamp(15rem,18vw,30rem)] sm:text-[clamp(8rem,17vw,20rem)]
+          text-[clamp(5rem,18vw,20rem)] sm:text-[clamp(8rem,17vw,20rem)]
           uppercase tracking-tight
-  bg-gradient-to-r from-[#ff4b1f] to-[#1fddff]
           bg-clip-text text-transparent
           select-none pointer-events-none
           will-change-transform

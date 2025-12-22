@@ -38,7 +38,7 @@ const About = () => {
                 loop
                 playsInline
               >
-                <source src="public\videos\virtualtr.mp4" type="video/mp4" />
+                <source src="/videos/virtualtr.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
