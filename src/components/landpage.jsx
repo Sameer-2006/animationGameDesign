@@ -99,12 +99,12 @@ const Landpage = () => {
           </a>
           <a
             href="#contact"
-            className=" text-[1vmax] font-[200] text-[#5f6368] hover:text-[#1a73e8] transition hidden md:block"
+            className="ml-[1vw]  text-[1vmax] font-[200] text-[#5f6368] hover:text-[#1a73e8] transition hidden md:block"
           >
             Contact Us
           </a>
 
-          <i className="ri-menu-line p-[20px] text-xl"></i>
+          <i className="ri-menu-line p-[10px] text-xl"></i>
         </div>
       </div>
 
