@@ -225,17 +225,6 @@ const Evnt = () => {
             </p>
           </div>
         </div>
-
-        <div className="mt-16 sm:mt-20 text-center">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="/"
-            className="inline-block rounded-full border px-6 py-2 text-sm hover:bg-slate-100 transition"
-          >
-            View All Projects →
-          </a>
-        </div>
       </div>
     </section>
   );
