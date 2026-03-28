@@ -197,6 +197,16 @@ const Member = () => {
         </div>
       </div>
     </section>
+       <div className="mt-16 sm:mt-20 text-center">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://anigd-iitism.vercel.app/members.html"
+            className=" inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 hover:scale-[1.03] transition-all duration-300"
+          >
+            All MEMBERS →
+          </a>
+        </div>
     <div className="mb-30"></div>
     </div>
   );
