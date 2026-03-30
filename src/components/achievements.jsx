@@ -129,7 +129,7 @@ const Achiev = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://sameer-2006.github.io/Allachieve/l"
+            href="https://sameer-2006.github.io/Allachieve/"
             className=" inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 hover:scale-[1.03] transition-all duration-300"
           >
            View All Achievements →
