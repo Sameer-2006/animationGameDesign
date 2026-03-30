@@ -124,15 +124,15 @@ const Achiev = () => {
           </div>
         </div>
 
-        {/* CTA */}
+    
         <div className="mt-16 sm:mt-20 text-center">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://sameer-2006.github.io/Allachieve/"
-            className="inline-block rounded-full border px-6 py-2 text-sm hover:bg-slate-100 transition"
+            href="https://sameer-2006.github.io/Allachieve/l"
+            className=" inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 hover:scale-[1.03] transition-all duration-300"
           >
-            View All Achievements →
+           View All Achievements →
           </a>
         </div>
       </div>
